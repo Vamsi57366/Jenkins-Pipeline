@@ -6,7 +6,6 @@ pipeline {
             steps {
                 echo "Building....."
             }
-
             post {
                 success {
                     mail(
@@ -17,5 +16,10 @@ pipeline {
                 }
             }
         }
+        stage('Complete'){
+            steps{
+                echo "Complete."
+        }
     }
+}
 }
