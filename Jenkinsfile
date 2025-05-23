@@ -28,7 +28,7 @@ pipeline {
 
         stage('Deploy to Staging') {
             steps {
-                echo 'Deploying staging environment using Docker'
+                echo 'Deploying to staging environment using Docker'
             }
         }
 
